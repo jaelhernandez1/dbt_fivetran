@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: test_pipeline
+    columns:
+      - name: id
+        description: user id
+        tests:
+          - unique
+          - not null
+      - name: roles
+        description: User role
+      - name: subscription
+        description: User subsciption
+      - name: created
+        description: Date of creation
+      - name: defaultLocale
+        description: Location
+      - name: email
+        description: User email
+      - name: user
+        description: User Name

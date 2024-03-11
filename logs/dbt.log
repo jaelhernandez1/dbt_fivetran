@@ -1,0 +1,156 @@
+[0m11:21:08.274590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070f0ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071649d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071656d0>]}
+
+
+============================== 11:21:08.277456 | 883b1e04-dd34-491f-af38-cf8b4371aeb1 ==============================
+[0m11:21:08.277456 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:21:08.277828 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jael.hernandez/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/jael.hernandez/Documents/dbt_fivetran/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:21:08.278177 [info ] [MainThread]: dbt version: 1.7.3
+[0m11:21:08.278394 [info ] [MainThread]: python version: 3.11.8
+[0m11:21:08.278590 [info ] [MainThread]: python path: /Users/jael.hernandez/Documents/DaaS/test/bin/python
+[0m11:21:08.278775 [info ] [MainThread]: os info: macOS-14.4-arm64-arm-64bit
+[0m11:21:08.577734 [info ] [MainThread]: Using profiles dir at /Users/jael.hernandez/.dbt
+[0m11:21:08.578086 [info ] [MainThread]: Using profiles.yml file at /Users/jael.hernandez/.dbt/profiles.yml
+[0m11:21:08.578279 [info ] [MainThread]: Using dbt_project.yml file at /Users/jael.hernandez/Documents/dbt_fivetran/dbt_project.yml
+[0m11:21:08.579525 [info ] [MainThread]: adapter type: bigquery
+[0m11:21:08.579754 [info ] [MainThread]: adapter version: 1.7.6
+[0m11:21:08.613678 [info ] [MainThread]: Configuration:
+[0m11:21:08.614023 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:21:08.614216 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:21:08.614394 [info ] [MainThread]: Required dependencies:
+[0m11:21:08.615142 [debug] [MainThread]: Executing "git --help"
+[0m11:21:08.636737 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:21:08.637371 [debug] [MainThread]: STDERR: "b''"
+[0m11:21:08.637626 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:21:08.637852 [info ] [MainThread]: Connection:
+[0m11:21:08.638153 [info ] [MainThread]:   method: service-account
+[0m11:21:08.638350 [info ] [MainThread]:   database: dataengineering-np-r-17f2ad92
+[0m11:21:08.638520 [info ] [MainThread]:   execution_project: dataengineering-np-r-17f2ad92
+[0m11:21:08.638692 [info ] [MainThread]:   schema: dbt_fivetran
+[0m11:21:08.638861 [info ] [MainThread]:   location: US
+[0m11:21:08.639029 [info ] [MainThread]:   priority: interactive
+[0m11:21:08.639192 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:21:08.639359 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:21:08.639521 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:21:08.639684 [info ] [MainThread]:   job_retries: 1
+[0m11:21:08.639879 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:21:08.640045 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:21:08.640213 [info ] [MainThread]:   keyfile: /Users/jael.hernandez/Documents/DaaS/dataengineering-np-r-17f2ad92-aaf27f697f22.json
+[0m11:21:08.640388 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:21:08.640547 [info ] [MainThread]:   client_id: None
+[0m11:21:08.640703 [info ] [MainThread]:   token_uri: None
+[0m11:21:08.640858 [info ] [MainThread]:   dataproc_region: None
+[0m11:21:08.641015 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:21:08.641173 [info ] [MainThread]:   gcs_bucket: None
+[0m11:21:08.641329 [info ] [MainThread]:   dataproc_batch: None
+[0m11:21:08.641599 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m11:21:08.646630 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:21:08.647395 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:21:08.723134 [debug] [MainThread]: On debug: select 1 as id
+[0m11:21:09.700158 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineering-np-r-17f2ad92&j=bq:US:04378a7c-95ce-4c30-8d66-34f5194c8e40&page=queryresults
+[0m11:21:10.239643 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:21:10.240368 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:21:10.243755 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.010116, "process_user_time": 1.210414, "process_kernel_time": 0.207104, "process_mem_max_rss": "140230656", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:21:10.244440 [debug] [MainThread]: Command `dbt debug` succeeded at 11:21:10.244286 after 2.01 seconds
+[0m11:21:10.244836 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:21:10.245268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071432d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ea9d10>]}
+[0m11:21:10.245663 [debug] [MainThread]: Flushing usage events
+[0m11:21:10.468192 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m11:21:15.423273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b29b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b68e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b69b10>]}
+
+
+============================== 11:21:15.425836 | 5c0ef758-a440-42c5-b40a-938d14844eb0 ==============================
+[0m11:21:15.425836 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:21:15.426209 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/jael.hernandez/Documents/dbt_fivetran/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jael.hernandez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:21:15.697605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11269fe90>]}
+[0m11:21:15.735660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112428cd0>]}
+[0m11:21:15.736256 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m11:21:15.747620 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m11:21:15.748828 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:21:15.749173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b949d0>]}
+[0m11:21:16.213484 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_pipeline' in the 'models' section of file 'models/source.yml'
+[0m11:21:16.255974 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_fivetran.unique_test_pipeline_id.fbbe26f5b5' (models/source.yml) depends on a node named 'test_pipeline' in package '' which was not found
+[0m11:21:16.256361 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_fivetran.not_test_pipeline_id.8d04e52c68' (models/source.yml) depends on a node named 'test_pipeline' in package '' which was not found
+[0m11:21:16.273020 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_fivetran.example
+[0m11:21:16.276070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139309d0>]}
+[0m11:21:16.282672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a17f50>]}
+[0m11:21:16.282992 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m11:21:16.283215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d43490>]}
+[0m11:21:16.284115 [info ] [MainThread]: 
+[0m11:21:16.284591 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:21:16.285211 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineering-np-r-17f2ad92'
+[0m11:21:16.285425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:21:17.154591 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineering-np-r-17f2ad92, now create_dataengineering-np-r-17f2ad92_dbt_fivetran)
+[0m11:21:17.155196 [debug] [ThreadPool]: Creating schema "database: "dataengineering-np-r-17f2ad92"
+schema: "dbt_fivetran"
+"
+[0m11:21:17.160919 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:21:17.227671 [debug] [ThreadPool]: On create_dataengineering-np-r-17f2ad92_dbt_fivetran: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "dbt_fivetran", "target_name": "dev", "connection_name": "create_dataengineering-np-r-17f2ad92_dbt_fivetran"} */
+create schema if not exists `dataengineering-np-r-17f2ad92`.`dbt_fivetran`
+  
+[0m11:21:18.021603 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineering-np-r-17f2ad92&j=bq:US:8691d7de-ee90-44c8-92de-b0fa600449b9&page=queryresults
+[0m11:21:18.983818 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dataengineering-np-r-17f2ad92_dbt_fivetran, now list_dataengineering-np-r-17f2ad92_dbt_fivetran)
+[0m11:21:18.984456 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:21:19.849437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f0f510>]}
+[0m11:21:19.850932 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:21:19.851382 [info ] [MainThread]: 
+[0m11:21:19.855220 [debug] [Thread-1 (]: Began running node model.dbt_fivetran.test_pipeline_user_dbt
+[0m11:21:19.855919 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_fivetran.test_pipeline_user_dbt ............... [RUN]
+[0m11:21:19.856724 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dataengineering-np-r-17f2ad92_dbt_fivetran, now model.dbt_fivetran.test_pipeline_user_dbt)
+[0m11:21:19.857142 [debug] [Thread-1 (]: Began compiling node model.dbt_fivetran.test_pipeline_user_dbt
+[0m11:21:19.863420 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_fivetran.test_pipeline_user_dbt"
+[0m11:21:19.865315 [debug] [Thread-1 (]: Timing info for model.dbt_fivetran.test_pipeline_user_dbt (compile): 11:21:19.857390 => 11:21:19.864991
+[0m11:21:19.865801 [debug] [Thread-1 (]: Began executing node model.dbt_fivetran.test_pipeline_user_dbt
+[0m11:21:19.892258 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_fivetran.test_pipeline_user_dbt"
+[0m11:21:19.893609 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:21:19.963654 [debug] [Thread-1 (]: On model.dbt_fivetran.test_pipeline_user_dbt: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.test_pipeline_user_dbt"} */
+
+  
+    
+
+    create or replace table `dataengineering-np-r-17f2ad92`.`dbt_fivetran`.`test_pipeline_user_dbt`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+SELECT
+    id,
+    roles,
+    subscription,
+    created,
+    defaultLocale,
+    email,
+    CONCAT(firstName, ' ', lastName) AS user
+FROM
+    Test_pipeline.user
+LIMIT
+    1000
+    );
+  
+[0m11:21:20.948608 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineering-np-r-17f2ad92&j=bq:US:87cff396-b19e-40d7-955b-7860dc6d475f&page=queryresults
+[0m11:21:22.973466 [debug] [Thread-1 (]: Timing info for model.dbt_fivetran.test_pipeline_user_dbt (execute): 11:21:19.866051 => 11:21:22.973195
+[0m11:21:22.974526 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c0ef758-a440-42c5-b40a-938d14844eb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ae54d0>]}
+[0m11:21:22.975240 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_fivetran.test_pipeline_user_dbt .......... [[32mCREATE TABLE (1.0k rows, 7.7 MiB processed)[0m in 3.12s]
+[0m11:21:22.975838 [debug] [Thread-1 (]: Finished running node model.dbt_fivetran.test_pipeline_user_dbt
+[0m11:21:22.977554 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:21:22.977933 [debug] [MainThread]: Connection 'model.dbt_fivetran.test_pipeline_user_dbt' was properly closed.
+[0m11:21:22.978296 [info ] [MainThread]: 
+[0m11:21:22.978658 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.69 seconds (6.69s).
+[0m11:21:22.979289 [debug] [MainThread]: Command end result
+[0m11:21:22.991952 [info ] [MainThread]: 
+[0m11:21:22.992407 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:21:22.992657 [info ] [MainThread]: 
+[0m11:21:22.992950 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:21:22.995329 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.610721, "process_user_time": 2.181134, "process_kernel_time": 0.219867, "process_mem_max_rss": "157188096", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:21:22.995833 [debug] [MainThread]: Command `dbt run` succeeded at 11:21:22.995725 after 7.61 seconds
+[0m11:21:22.996159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b693d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b695d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ca7750>]}
+[0m11:21:22.996468 [debug] [MainThread]: Flushing usage events
+[0m11:21:23.209566 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
