@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: test_pipeline
+  - name: test_pipeline_user_dbt
     columns:
       - name: id
         description: user id
